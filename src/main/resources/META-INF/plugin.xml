@@ -3,10 +3,19 @@
     <name>HdmpDataAuth</name>
     <vendor email="me@upcwangying.com" url="https://upcwangying.com">Ying Wang</vendor>
 
-    <description><![CDATA[
-    <h1>HdmpDataAuth<h1>
-    <em>Automatically generate data permission annotation class</em>
-    ]]></description>
+    <description>Automatically generate data permission annotation class</description>
+
+    <change-notes>
+        <![CDATA[
+        <ul>
+        1.0.1
+        <li>Programming language moved from Java to Kotlin. </li>
+        </ul>
+        <ul>1.0.0
+            <li>Nothing. </li>
+        </ul>
+        ]]>
+    </change-notes>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
@@ -20,7 +29,7 @@
 
     <actions>
         <!-- Add your actions here -->
-        <action id="Hdmp.DataAuth" class="com.upcwangying.plugins.HdmpDataAuthAction" text="HdmpDataAuth"
+        <action id="Hdmp.DataAuth" class="com.upcwangying.plugins.HdmpDataAuthActionKt" text="HdmpDataAuth"
                 description="Automatically generate data permission annotation class">
             <add-to-group group-id="ToolsMenu" anchor="first"/>
         </action>
