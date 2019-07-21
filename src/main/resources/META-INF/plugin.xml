@@ -1,0 +1,28 @@
+<idea-plugin>
+    <id>com.upcwangying.plugins.data-auth-idea-plugin</id>
+    <name>HdmpDataAuth</name>
+    <vendor email="me@upcwangying.com" url="https://upcwangying.com">Ying Wang</vendor>
+
+    <description><![CDATA[
+    <h1>HdmpDataAuth<h1>
+    <em>Automatically generate data permission annotation class</em>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="Hdmp.DataAuth" class="com.upcwangying.plugins.HdmpDataAuthAction" text="HdmpDataAuth"
+                description="Automatically generate data permission annotation class">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
