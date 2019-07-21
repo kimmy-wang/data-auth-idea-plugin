@@ -3,10 +3,14 @@
     <name>HdmpDataAuth</name>
     <vendor email="me@upcwangying.com" url="https://upcwangying.com">Ying Wang</vendor>
 
-    <description>Automatically generate data permission annotation class</description>
+    <description>将光标放到方法或者类上，以此点击 Tools -> DataAuthGroup 即可自动生成数据权限相关注解。</description>
 
     <change-notes>
         <![CDATA[
+        <ul>
+        1.0.2
+        <li>支持旧版本数据权限注解书写格式. </li>
+        </ul>
         <ul>
         1.0.1
         <li>Programming language moved from Java to Kotlin. </li>
@@ -29,9 +33,19 @@
 
     <actions>
         <!-- Add your actions here -->
-        <action id="Hdmp.DataAuth" class="com.upcwangying.plugins.HdmpDataAuthActionKt" text="HdmpDataAuth"
-                description="Automatically generate data permission annotation class">
+        <group id="Hdmp.DataAuthGroup" class="com.upcwangying.plugins.groups.DataAuthGroup" text="DataAuthGroup"
+               description="Automatically generate data permission annotation class">
+
             <add-to-group group-id="ToolsMenu" anchor="first"/>
-        </action>
+
+            <action id="Hdmp.DataAuth" class="com.upcwangying.plugins.actions.HdmpDataAuthActionKt" text="HdmpDataAuth"
+                    description="Data Auth Version 1.0">
+            </action>
+
+            <action id="Hdmp.DataAuth2" class="com.upcwangying.plugins.actions.HdmpDataAuthActionKt2" text="HdmpDataAuth2"
+                    description="Data Auth Version 2.0">
+            </action>
+
+        </group>
     </actions>
 </idea-plugin>

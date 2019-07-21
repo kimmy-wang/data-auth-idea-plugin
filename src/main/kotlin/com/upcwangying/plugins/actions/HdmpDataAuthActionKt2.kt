@@ -1,4 +1,4 @@
-package com.upcwangying.plugins
+package com.upcwangying.plugins.actions
 
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
@@ -13,7 +13,7 @@ import javax.swing.Icon
  * @author WANGY
  * @date 2019-07-21 13:53
  */
-class HdmpDataAuthActionKt : AnAction {
+class HdmpDataAuthActionKt2 : AnAction {
 
     constructor() : this(null, null, null)
 
