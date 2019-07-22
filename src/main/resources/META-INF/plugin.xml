@@ -3,10 +3,27 @@
     <name>HdmpDataAuth</name>
     <vendor email="me@upcwangying.com" url="https://upcwangying.com">Ying Wang</vendor>
 
-    <description>将光标放到方法或者类上，以此点击 Tools -> DataAuthGroup 即可自动生成数据权限相关注解。</description>
+    <description>
+        <![CDATA[
+          <h1>HdmpDataAuth</h1>
+          <br/>
+          <p>
+          <b><a href="https://github.com/upcwangying/data-auth-idea-plugin">GitHub</a></b>
+          </p>
+          <br/>
+          <p><b>将光标放到方法或者类上，以此点击 Tools -> DataAuthGroup 即可自动生成数据权限相关注解。</b></p>
+          <br/>
+          <p><b>如果有问题，欢迎大家到 GitHub 上留言。</b></p>
+          <br/>
+        ]]>
+    </description>
 
     <change-notes>
         <![CDATA[
+        <ul>
+        1.0.3
+        <li>最低支持版本181. </li>
+        </ul>
         <ul>
         1.0.2
         <li>支持旧版本数据权限注解书写格式. </li>
@@ -21,11 +38,15 @@
         ]]>
     </change-notes>
 
+    <idea-version since-build="181"/>
+
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
     <!-- uncomment to enable plugin in all products
     <depends>com.intellij.modules.lang</depends>
     -->
+
+    <depends>com.intellij.modules.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
@@ -42,7 +63,8 @@
                     description="Data Auth Version 1.0">
             </action>
 
-            <action id="Hdmp.DataAuth2" class="com.upcwangying.plugins.actions.HdmpDataAuthActionKt2" text="HdmpDataAuth2"
+            <action id="Hdmp.DataAuth2" class="com.upcwangying.plugins.actions.HdmpDataAuthActionKt2"
+                    text="HdmpDataAuth2"
                     description="Data Auth Version 2.0">
             </action>
 
