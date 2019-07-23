@@ -7,6 +7,7 @@ import com.intellij.openapi.actionSystem.PlatformDataKeys
 import com.intellij.openapi.command.WriteCommandAction
 import com.intellij.psi.PsiClass
 import com.intellij.psi.PsiMethod
+import java.util.*
 import javax.swing.Icon
 
 /**
@@ -37,10 +38,11 @@ class HdmpDataAuthActionKt2 : AnAction {
         //如果光标选择的是类，弹出对话框提醒
         if (psiElement is PsiClass || psiElement is PsiMethod) {
             val name: String = if (psiElement is PsiClass) psiElement.name!! else (psiElement as PsiMethod).name
+            val uniqueId = UUID.randomUUID().toString().replace("-", "")
             val insertString = if (psiElement is PsiClass)
-                "@MapperDesc(id = \"$name\", title = \"$name\")\n"
+                "@MapperDesc(id = \"$uniqueId\", title = \"$name\")\n"
             else
-                "\t@DataAuthSupport\n\t@DataAuth\n\t@MapperDesc(id = \"$name\", title = \"$name\")\n"
+                "\t@DataAuthSupport\n\t@DataAuth\n\t@MapperDesc(uniqueId = \"$uniqueId\", title = \"$name\")\n"
 
             val runnable = { document.insertString(preLineStartOffset, insertString) }
             //加入任务，由IDEA调度执行这个任务
