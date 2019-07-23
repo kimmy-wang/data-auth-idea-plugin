@@ -21,6 +21,14 @@
     <change-notes>
         <![CDATA[
         <ul>
+        1.0.5
+        <li>feat: Add plugin icons. </li>
+        </ul>
+        <ul>
+        1.0.4
+        <li>fix: 修复bug. </li>
+        </ul>
+        <ul>
         1.0.3
         <li>最低支持版本181. </li>
         </ul>
