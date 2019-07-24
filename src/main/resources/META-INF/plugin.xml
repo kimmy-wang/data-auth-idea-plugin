@@ -11,7 +11,7 @@
           <b><a href="https://github.com/upcwangying/data-auth-idea-plugin">GitHub</a></b>
           </p>
           <br/>
-          <p><b>将光标放到方法或者类上，以此点击 Tools -> DataAuthGroup 即可自动生成数据权限相关注解。</b></p>
+          <p><b>将光标放到方法或者类上，依次点击 Tools -> DataAuthGroup 即可自动生成数据权限相关注解。</b></p>
           <br/>
           <p><b>如果有问题，欢迎大家到 GitHub 上留言。</b></p>
           <br/>
@@ -20,6 +20,10 @@
 
     <change-notes>
         <![CDATA[
+        <ul>
+        1.0.6
+        <li>fix: 修复bug. </li>
+        </ul>
         <ul>
         1.0.5
         <li>feat: Add plugin icons. </li>
