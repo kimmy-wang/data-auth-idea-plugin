@@ -40,7 +40,7 @@ class HdmpDataAuthActionKt2 : AnAction {
             val name: String = if (psiElement is PsiClass) psiElement.name!! else (psiElement as PsiMethod).name
             val uniqueId = UUID.randomUUID().toString().replace("-", "")
             val insertString = if (psiElement is PsiClass)
-                "@MapperDesc(id = \"$uniqueId\", title = \"$name\")\n"
+                "@MapperDesc(uniqueId = \"$uniqueId\", title = \"$name\")\n"
             else
                 "\t@DataAuthSupport\n\t@DataAuth\n\t@MapperDesc(uniqueId = \"$uniqueId\", title = \"$name\")\n"
 
