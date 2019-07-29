@@ -5,6 +5,8 @@ import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.LangDataKeys
 import com.intellij.openapi.actionSystem.PlatformDataKeys
 import com.intellij.openapi.command.WriteCommandAction
+import com.intellij.openapi.ui.Messages
+import com.intellij.psi.PsiClass
 import com.intellij.psi.PsiMethod
 import javax.swing.Icon
 
@@ -12,7 +14,7 @@ import javax.swing.Icon
  * @author WANGY
  * @date 2019-07-21 18:51
  */
-class HdmpDataAuthActionKt : AnAction {
+class DataAuthActionKt : AnAction {
 
     constructor() : this(null, null, null)
 
@@ -39,6 +41,10 @@ class HdmpDataAuthActionKt : AnAction {
             val runnable = { document.insertString(preLineStartOffset, insertString) }
             //加入任务，由IDEA调度执行这个任务
             WriteCommandAction.runWriteCommandAction(project, runnable)
+        }
+
+        if (psiElement is PsiClass) {
+            Messages.showWarningDialog(project, "数据权限1.0版本不支持在类上添加注解","警告")
         }
     }
 }

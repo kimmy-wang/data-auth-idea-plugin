@@ -8,9 +8,9 @@ import javax.swing.*;
  * @author WANGY
  * @date 2019-07-21 19:20
  */
-public final class HdmpDataAuthIcons {
-    private HdmpDataAuthIcons() {
-        throw new AssertionError("icons.HdmpDataAuthIcons"
+public final class DataAuthIcons {
+    private DataAuthIcons() {
+        throw new AssertionError("icons.DataAuthIcons"
                 + " instances for you!");
     }
 

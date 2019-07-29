@@ -14,7 +14,7 @@ import javax.swing.Icon
  * @author WANGY
  * @date 2019-07-21 13:53
  */
-class HdmpDataAuthActionKt2 : AnAction {
+class DataAuthActionKt2 : AnAction {
 
     constructor() : this(null, null, null)
 

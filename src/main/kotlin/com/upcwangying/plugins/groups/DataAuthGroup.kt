@@ -3,7 +3,7 @@ package com.upcwangying.plugins.groups
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.CommonDataKeys
 import com.intellij.openapi.actionSystem.DefaultActionGroup
-import com.upcwangying.plugins.icons.HdmpDataAuthIcons
+import com.upcwangying.plugins.icons.DataAuthIcons
 
 /**
  * @author WANGY
@@ -19,6 +19,6 @@ class DataAuthGroup : DefaultActionGroup {
         val editor = e.getData(CommonDataKeys.EDITOR)
         e.presentation.isVisible = true
         e.presentation.isEnabled = editor != null
-        e.presentation.icon = HdmpDataAuthIcons.HUADI
+        e.presentation.icon = DataAuthIcons.HUADI
     }
 }

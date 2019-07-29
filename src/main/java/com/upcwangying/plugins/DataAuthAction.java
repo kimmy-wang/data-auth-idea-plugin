@@ -16,7 +16,7 @@ import org.jetbrains.annotations.NotNull;
  * @author WANGY
  * @date 2019-07-20 21:48
  */
-public class HdmpDataAuthAction extends AnAction {
+public class DataAuthAction extends AnAction {
 
     /**
      * @param e

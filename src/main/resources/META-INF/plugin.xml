@@ -8,24 +8,18 @@
           <h1>HdmpDataAuth</h1>
           <br/>
           <p><b>How to use?</b></p>
-          <br/>
           <ol>
             <li>Put the cursor on the method name or class name. </li>
             <li>Click `Tools -> DataAuthGroup` to automatically generate the data permission focus solution.</li>
           </ol>
-          </p>
-          <br/>
           <p><b>If you have any questions during use, you can submit an issue on the <a href="https://github.com/upcwangying/data-auth-idea-plugin">GitHub</a> repository.</b></p>
           <br/>
           <br/>
           <p><b>如何使用？</b></p>
-          <br/>
           <ol>
             <li>将光标放到方法名或者类名上. </li>
             <li>依次点击 `Tools -> DataAuthGroup` 即可自动生成数据权限相关注解. </li>
           </ol>
-          </p>
-          <br/>
           <p><b>如果在使用过程中有任何疑问，可以在 <a href="https://github.com/upcwangying/data-auth-idea-plugin">GitHub</a> 仓库上提交issue。</b></p>
           <br/>
         ]]>
@@ -83,16 +77,16 @@
 
     <actions>
         <!-- Add your actions here -->
-        <group id="Hdmp.DataAuthGroup" class="com.upcwangying.plugins.groups.DataAuthGroup" text="DataAuthGroup"
+        <group id="data-auth-idea-plugin.DataAuthGroup" class="com.upcwangying.plugins.groups.DataAuthGroup" text="DataAuthGroup"
                description="Automatically generate data permission annotation class">
 
             <add-to-group group-id="ToolsMenu" anchor="first"/>
 
-            <action id="Hdmp.DataAuth" class="com.upcwangying.plugins.actions.HdmpDataAuthActionKt" text="HdmpDataAuth"
+            <action id="data-auth-idea-plugin.DataAuth" class="com.upcwangying.plugins.actions.DataAuthActionKt" text="HdmpDataAuth"
                     description="Data Auth Version 1.0">
             </action>
 
-            <action id="Hdmp.DataAuth2" class="com.upcwangying.plugins.actions.HdmpDataAuthActionKt2"
+            <action id="data-auth-idea-plugin.DataAuth2" class="com.upcwangying.plugins.actions.DataAuthActionKt2"
                     text="HdmpDataAuth2"
                     description="Data Auth Version 2.0">
             </action>
